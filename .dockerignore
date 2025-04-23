@@ -1,0 +1,34 @@
+# Git files
+.git
+.gitignore
+
+# Docker files
+Dockerfile*
+.dockerignore
+
+# Python virtual environment
+.venv
+venv
+*.pyc
+__pycache__
+
+# IDE specific files
+.idea
+.vscode
+
+# Dependency lock files (if managed differently, otherwise keep)
+# uv.lock
+
+# Build artifacts
+dist
+build
+*.egg-info
+
+# Test artifacts
+.pytest_cache
+.coverage
+htmlcov
+
+# OS specific files
+.DS_Store
+Thumbs.db

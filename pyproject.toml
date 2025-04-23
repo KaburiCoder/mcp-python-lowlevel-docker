@@ -1,0 +1,20 @@
+[project]
+name = "mcp-server-demo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["mcp[cli]>=1.6.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+# Hatchling에게 'configs'와 'db' 디렉토리를 패키지로 포함하도록 지시합니다.
+# 또한, 루트에 있는 'main.py' 모듈도 포함하도록 지시합니다.
+# include는 프로젝트 루트 기준 경로입니다.
+include = ["/main.py"]
+
+[project.scripts]
+mcp-server-demo = "main:run_server"
